@@ -16,4 +16,4 @@ if("ServiceWorker" in navigator){
     window.open(externalPageUrl, "_blank");
     }
 // Event listener for button click
-  document.getElementById("loadPageButton").addEventListener("click", loadExternalPage);
+  document.getElementById("click-me").addEventListener("click", loadExternalPage);
