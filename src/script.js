@@ -6,5 +6,14 @@ if("ServiceWorker" in navigator){
         console.log("SW Registration Failed");
         console.log(error);
     })
-
 }
+
+  // Function to load page from another server
+  function loadExternalPage() {
+   // Change the URL to the desired page from another server
+    var externalPageUrl = "http://192.168.29.115/";           
+    // Open the external page in a new tab
+    window.open(externalPageUrl, "_blank");
+    }
+// Event listener for button click
+  document.getElementById("loadPageButton").addEventListener("click", loadExternalPage);
